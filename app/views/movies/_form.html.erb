@@ -1,0 +1,19 @@
+<%= form_with model: movie, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :rating %><br>
+    <%= form.text_field :rating %>
+  </p>
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+  <p>
+    <%= form.label :release_date %><br>
+    <%= form.date_field :release_date %>
+  </p>
+  <%= form.submit %>
+<% end %>

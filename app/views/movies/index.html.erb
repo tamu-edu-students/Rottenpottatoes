@@ -1,0 +1,30 @@
+<h1>All Movies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= link_to "Title", movies_path(sort: "title") %></th>
+      <th><%= link_to "Rating", movies_path(sort: "rating") %></th>
+      <th><%= link_to "Description", movies_path(sort: "description") %></th>
+      <th><%= link_to "Release Date", movies_path(sort: "release_date") %></th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.title %></td>
+        <td><%= movie.rating %></td>
+        <td><%= movie.description %></td>
+        <td><%= movie.release_date %></td>
+        <td>
+          <%= link_to 'Show', movie_path(movie) %> |
+          <%= link_to 'Edit', edit_movie_path(movie) %> |
+          <%= link_to 'Delete', movie_path(movie), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Add New Movie', new_movie_path %>
