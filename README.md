@@ -2,8 +2,6 @@
 
 A simple **movie management application** built with Ruby on Rails. Users can **create, read, update, and delete movies**, view them in a **sortable table**, and interact with a clean, styled interface.
 
-
-
 ## Live Demo on Heroku
 
 The app is deployed on Heroku and fully functional.
@@ -18,8 +16,6 @@ The app is deployed on Heroku and fully functional.
 * The database is seeded with sample movies.
 
 > Note: Changes made locally (like seeds or CSS updates) need to be pushed and migrated on Heroku to reflect online.
-
-
 
 ## Features
 
@@ -47,7 +43,7 @@ The app is deployed on Heroku and fully functional.
 
 
 
-## 💻 Installation (Local Development)
+## Installation (Local Development)
 
 1. **Clone the repository**
 
