@@ -1,30 +1,39 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
- table {
-  width: 100%;
+.movies-table {
   border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
 }
-th, td {
-  border: 1px solid #333;
+
+.movies-table th,
+.movies-table td {
+  border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
 }
-th a {
-  text-decoration: none;
-  color: black;
-}
-th a:hover {
-  text-decoration: underline;
-}
-th.sorted {
+
+.movies-table th.sorted {
   background-color: #f0f0f0;
 }
 
+.btn {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-info { background-color: #17a2b8; }
+.btn-warning { background-color: #ffc107; color: black; }
+.btn-danger { background-color: #dc3545; }
+.btn-success { background-color: #28a745; }
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+th.sorted {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}

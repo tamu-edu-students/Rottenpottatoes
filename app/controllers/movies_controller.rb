@@ -13,13 +13,21 @@ class MoviesController < ApplicationController
   end
 
   def create
+  # Try to find an existing movie with the same title (case-insensitive)
+  @movie = Movie.find_by('lower(title) = ?', movie_params[:title].downcase.strip)
+
+  if @movie
+    redirect_to movies_path, alert: "Movie already exists!"
+  else
     @movie = Movie.new(movie_params)
     if @movie.save
-      redirect_to @movie, notice: "Movie successfully created."
+      redirect_to @movie, notice: "Movie was successfully created."
     else
       render :new
     end
   end
+end
+
 
   def edit
   end
@@ -33,8 +41,9 @@ class MoviesController < ApplicationController
   end
 
   def destroy
+    @movie = Movie.find(params[:id])
     @movie.destroy
-    redirect_to movies_path, notice: "Movie deleted."
+    redirect_to movies_path, notice: "Movie was successfully deleted."
   end
 
   private
