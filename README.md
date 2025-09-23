@@ -91,3 +91,5 @@ Open `http://localhost:3000` in your browser to see the app locally.
 * Sorting is handled via Rails parameters and reflected visually in the table headers.
 
 
+
+
