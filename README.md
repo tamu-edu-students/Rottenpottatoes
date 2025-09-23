@@ -2,7 +2,7 @@
 
 A simple **movie management application** built with Ruby on Rails. Users can **create, read, update, and delete movies**, view them in a **sortable table**, and interact with a clean, styled interface.
 
----
+
 
 ## Live Demo on Heroku
 
@@ -19,7 +19,7 @@ The app is deployed on Heroku and fully functional.
 
 > Note: Changes made locally (like seeds or CSS updates) need to be pushed and migrated on Heroku to reflect online.
 
----
+
 
 ## Features
 
@@ -31,22 +31,21 @@ The app is deployed on Heroku and fully functional.
 * **Duplicate Prevention:** Cannot add a movie with the same title.
 * **Styled Interface:** Hand-written CSS for tables, buttons, and sorted column highlights.
 
----
+
 
 ## Table & Sorting
 
 * Movies are displayed in a `<table>` with proper `<thead>` and `<tbody>` structure.
 * Columns are **sortable**: Title, Rating, Description, Release Date.
 * The **sorted column** is highlighted with an arrow indicator.
-
----
+  
 
 ## Styling
 
 * Hand-written CSS styles the table and buttons.
 * Buttons for **Show, Edit, Delete, and Add New Movie** are color-coded and have hover effects.
 
----
+
 
 ## 💻 Installation (Local Development)
 
@@ -79,15 +78,15 @@ rails server
 
 Open `http://localhost:3000` in your browser to see the app locally.
 
----
+
 
 ## Technologies Used
 
 * Ruby on Rails 7
 * PostgreSQL (or SQLite for local development)
 * HTML5 & CSS3 (hand-written)
+* Heroku for Cloud Deployment
 
----
 
 ## Notes & Best Practices
 
