@@ -33,9 +33,10 @@ end
   end
 
   def update
-  @movie = Movie.find(params[:id])
   if @movie.update(movie_params)
-    redirect_to @movie, notice: "Movie was successfully updated."
+    # Instead of redirecting, render the edit page again
+    flash.now[:notice] = "Movie updated successfully!"
+    render :edit
   else
     render :edit
   end
