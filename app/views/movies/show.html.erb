@@ -3,8 +3,6 @@
 <p><strong>Rating:</strong> <%= @movie.rating %></p>
 <p><strong>Description:</strong> <%= @movie.description %></p>
 <p><strong>Release Date:</strong> <%= @movie.release_date %></p>
-<p><strong>Director:</strong> <%= @movie.director %></p>
-<p><strong>Production House:</strong> <%= @movie.production_house %></p>
 
 <%= link_to "Edit", edit_movie_path(@movie), class: "btn btn-warning" %>
 <%= link_to "Back to Movies", movies_path, class: "btn btn-secondary" %>
