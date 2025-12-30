@@ -11,7 +11,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 # Add pg for Heroku
-gem "pg", "~> 1.5"
+gem "pg", "~> 1.6"
 
 group :development, :test do
   # keep sqlite3 only for local dev/test
